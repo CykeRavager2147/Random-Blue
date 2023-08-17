@@ -1,0 +1,73 @@
+
+/* rgb(53, 21, 93)
+rgb(81, 43, 129)
+rgb(68, 119, 206)
+rgb(140, 171, 255) */
+
+body{
+    background-color: rgb(140, 171, 255);
+    display: flex;
+    justify-content: center;
+    color: rgb(53, 21, 93);
+
+    text-align: center;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app{
+    margin-top: 4rem;
+    padding: 1rem;
+    border-radius: 23px;
+    width: 700px;
+    background-color: rgb(68, 119, 206);
+    box-shadow: 20px 20px rgb(81, 43, 129);
+}
+
+.polls{
+    margin: 50px;
+    background-color: rgb(81, 43, 129);
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(36, 9, 68);
+    box-shadow: 18px 18px rgb(36, 9, 68);
+}
+
+.answerbutton{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    margin: 20px;
+    background-color: rgb(68, 119, 206);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#next{
+    margin: 20px;
+    background-color: rgb(68, 119, 206);
+    padding: 5px;
+    border-radius: 5px;
+    display: none;
+}
+
+#exb{
+    background-color: rgb(81, 43, 129);
+    border: none;
+}
+
+/* Point A - Simple Css layout for visuals */
+
+.correct{
+    background-color: #98eabc;
+}
+
+.incorrect{
+    background-color: #ff9393;
+}
+
+/* Point B - clicking can edits colors, sizes, fonts, etc, */
