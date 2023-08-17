@@ -8,7 +8,8 @@ body{
     background-color: rgb(140, 171, 255);
     display: flex;
     justify-content: center;
-    color: rgb(53, 21, 93);
+    /* color: rgb(53, 21, 93); */
+    color: whitesmoke;
 
     text-align: center;
 }
@@ -31,8 +32,9 @@ body{
     background-color: rgb(81, 43, 129);
     padding: 15px;
     border-radius: 10px;
-    color: rgb(36, 9, 68);
+    color: rgb(255, 255, 255);
     box-shadow: 18px 18px rgb(36, 9, 68);
+    letter-spacing: 1.78px;
 }
 
 .answerbutton{
@@ -43,8 +45,13 @@ body{
 .button{
     margin: 20px;
     background-color: rgb(68, 119, 206);
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: ;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
 }
 
 #next{
@@ -63,11 +70,12 @@ body{
 /* Point A - Simple Css layout for visuals */
 
 .correct{
-    background-color: #98eabc;
+    /* background-color: rgb(0, 153, 255); */
+    background-color: rgb(63, 134, 221);
 }
 
 .incorrect{
-    background-color: #ff9393;
+    background-color: #789fc5;
 }
 
 /* Point B - clicking can edits colors, sizes, fonts, etc, */
