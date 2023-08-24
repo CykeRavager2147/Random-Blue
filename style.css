@@ -48,7 +48,7 @@ body{
     padding: 10px 15px 10px 15px;
     border: none;
     border-radius: 8px;
-    box-shadow: ;
+    box-shadow: 2px 2px 10px rgb(36, 9, 68);
     color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 18px;
@@ -70,12 +70,17 @@ body{
 /* Point A - Simple Css layout for visuals */
 
 .correct{
-    /* background-color: rgb(0, 153, 255); */
-    background-color: rgb(63, 134, 221);
+    /* background-color: rgb(0, 153, 255);  */
+    background-color: #9aeabc;
+
+    /* padding: 25px; */
 }
 
 .incorrect{
-    background-color: #789fc5;
+    /* background-color: #789fc5;  */
+    background-color: #ff9293;
+
+    /* display: none; */
 }
 
 /* Point B - clicking can edits colors, sizes, fonts, etc, */
