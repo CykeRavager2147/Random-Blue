@@ -105,26 +105,68 @@ const questions = [
     ],
   },
   {
-  question: "Atomic bombings of _________ and ________",
-  answers: [
-    {
-      text: "New York, Washington DC",
-      correct: "false",
-    },
-    {
-      text: "kabul, jalalabad",
-      correct: "false",
-    },
-    {
-      text: "Hiroshima, Nagasaki",
-      correct: "true",
-    },
-    {
-      text: "Sydney, Melbourne",
-      correct: "false",
-    },
-  ],
-},
+    question: "Atomic bombings of _________ and ________",
+    answers: [
+      {
+        text: "New York, Washington DC",
+        correct: "false",
+      },
+      {
+        text: "kabul, jalalabad",
+        correct: "false",
+      },
+      {
+        text: "Hiroshima, Nagasaki",
+        correct: "true",
+      },
+      {
+        text: "Sydney, Melbourne",
+        correct: "false",
+      },
+    ],
+  },
+  {
+    question: "How many minutes are in a full week?",
+    answers: [
+      {
+        text: "10080",
+        correct: "true",
+      },
+      {
+        text: "1203",
+        correct: "false",
+      },
+      {
+        text: "-7",
+        correct: "false",
+      },
+      {
+        text: "6400",
+        correct: "false",
+      },
+    ],
+  },
+  {
+    question: "Which is the only body part that is fully grown from birth?",
+    answers: [
+      {
+        text: "Nose",
+        correct: "false",
+      },
+      {
+        text: "Palm",
+        correct: "false",
+      },
+      {
+        text: "Eyes",
+        correct: "true",
+      },
+      {
+        text: "Knee",
+        correct: "false",
+      },
+    ],
+  },
 ];
 
 // Point A - Basic questions, Css, Html,
@@ -173,7 +215,7 @@ function selectAnswer(event) {
   console.log(isCorrect);
   if (isCorrect) {
     selectedButton.classList.add("correct");
-    score++
+    score++;
   } else {
     selectedButton.classList.add("incorrect");
   }
@@ -186,19 +228,19 @@ function selectAnswer(event) {
   next.style.display = "block";
 }
 
-function showScore(){
-  resetState()
-  elementQuestion.innerHTML=`You Scored ${score} out of ${questions.length}`
-  next.innerHTML="Play again"
-  next.style.display="block"
-};
+function showScore() {
+  resetState();
+  elementQuestion.innerHTML = `You Scored ${score} out of ${questions.length}`;
+  next.innerHTML = "Play again";
+  next.style.display = "block";
+}
 
 function handleNextButton() {
-  currentQuestionIndex++
+  currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
     showQuestion();
   } else {
-    showScore()
+    showScore();
   }
 }
 
