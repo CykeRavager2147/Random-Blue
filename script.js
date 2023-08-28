@@ -62,6 +62,69 @@ const questions = [
       },
     ],
   },
+  {
+    question: "What company was originally called 'Cadabra' ?",
+    answers: [
+      {
+        text: "Ebay",
+        correct: "false",
+      },
+      {
+        text: "Old Man Strength",
+        correct: "false",
+      },
+      {
+        text: "Spotify",
+        correct: "false",
+      },
+      {
+        text: "Amazon",
+        correct: "true",
+      },
+    ],
+  },
+  {
+    question: "What country drinks the most coffee per capita?",
+    answers: [
+      {
+        text: "Canada",
+        correct: "false",
+      },
+      {
+        text: "Finland",
+        correct: "true",
+      },
+      {
+        text: "China",
+        correct: "false",
+      },
+      {
+        text: "Australia",
+        correct: "false",
+      },
+    ],
+  },
+  {
+  question: "Atomic bombings of _________ and ________",
+  answers: [
+    {
+      text: "New York, Washington DC",
+      correct: "false",
+    },
+    {
+      text: "kabul, jalalabad",
+      correct: "false",
+    },
+    {
+      text: "Hiroshima, Nagasaki",
+      correct: "true",
+    },
+    {
+      text: "Sydney, Melbourne",
+      correct: "false",
+    },
+  ],
+},
 ];
 
 // Point A - Basic questions, Css, Html,
