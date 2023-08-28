@@ -96,6 +96,7 @@ function showQuestion() {
     if (answer.correct) {
       button.dataset.correct = answer.correct;
       console.log(button.dataset.correct);
+
       // line 100 !!!
     }
     button.addEventListener("click", selectAnswer);
@@ -109,6 +110,7 @@ function selectAnswer(event) {
   console.log(isCorrect);
   if (isCorrect) {
     selectedButton.classList.add("correct");
+    score++
   } else {
     selectedButton.classList.add("incorrect");
   }
@@ -119,7 +121,6 @@ function selectAnswer(event) {
     button.disabled = "true";
   });
   next.style.display = "block";
-  // Point B - When clicking on buttons actiaully does something (logs the clicked button) - Point C is earlier.
 }
 
 function showScore(){
@@ -130,7 +131,7 @@ function showScore(){
 };
 
 function handleNextButton() {
-  currentQuestionIndex++;
+  currentQuestionIndex++
   if (currentQuestionIndex < questions.length) {
     showQuestion();
   } else {

@@ -55,11 +55,16 @@ body{
 }
 
 #next{
-    margin: 20px;
     background-color: rgb(68, 119, 206);
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
     display: none;
+    border: none;
+    width: 100px;
+    box-shadow: 2px 2px 10px rgb(36, 9, 68);
 }
 
 #exb{
@@ -84,3 +89,10 @@ body{
 }
 
 /* Point B - clicking can edits colors, sizes, fonts, etc, */
+
+.next{
+    width: 300px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
